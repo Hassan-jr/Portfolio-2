@@ -25,9 +25,49 @@ const abouts = [
 
 const skills = [
   {
-    name: 'Test skill',
-    bgColor: '#ffffff',
-    icon: images.about01,
+    name: 'Javascript',
+    bgColor: '#EEEEEE',
+    icon: images.javascript,
+  },
+  {
+    name: 'Css',
+    bgColor: '#F8FFDB',
+    icon: images.css,
+  },
+  {
+    name: 'HTML',
+    bgColor: '#FAF7F0',
+    icon: images.html,
+  },
+  {
+    name: 'React.js',
+    bgColor: '#DFE8CC',
+    icon: images.react,
+  },
+  {
+    name: 'Redux',
+    bgColor: '#FFE6F7',
+    icon: images.redux,
+  },
+  {
+    name: 'React Native',
+    bgColor: '#EEF1FF',
+    icon: images.flutter,
+  },
+  {
+    name: 'Node.js',
+    bgColor: '#F9F9F9',
+    icon: images.node,
+  },
+  {
+    name: 'MongoDB',
+    bgColor: '#DAEAF1',
+    icon: images.javascript,
+  },
+  {
+    name: 'MongoDB',
+    bgColor: '#DFE8CC',
+    icon: images.javascript,
   },
 ];
 
