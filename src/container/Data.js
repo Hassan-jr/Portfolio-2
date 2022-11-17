@@ -46,9 +46,9 @@ const experiences = [
 
 const testimonials = [
   {
-    imgurl: images.about01,
-    name: 'TESTIMO NAME',
-    feedback: 'TESTIMONIAL feedback',
+    imgurl: images.pro1,
+    name: 'Zakaria',
+    feedback: 'Without doubt one of the most talented programmers out there.  I always go back to Hassan when I am out of my depth and he never failed to deliver what I ask for.   Smart, trustworthy and professional.You would not be disappointed.',
     company: 'Company testimonial',
   },
 ];
