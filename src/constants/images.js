@@ -34,6 +34,14 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+// mine
+import pro1 from '../assets/pro1.png';
+import pro2 from '../assets/pro2.png';
+import pro3 from '../assets/pro3.png';
+import blog from '../assets/blog.png';
+import caske3 from '../assets/caske3.png';
+import dashboard1 from '../assets/dashboard1.png';
+import noma from '../assets/noma.png';
 
 export default {
   email,
@@ -69,4 +77,11 @@ export default {
   nb,
   skype,
   spotify,
+  pro1,
+  pro2,
+  pro3,
+  blog,
+  dashboard1,
+  caske3,
+  noma,
 };
