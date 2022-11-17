@@ -49,7 +49,19 @@ const testimonials = [
     imgurl: images.pro1,
     name: 'Zakaria',
     feedback: 'Without doubt one of the most talented programmers out there.  I always go back to Hassan when I am out of my depth and he never failed to deliver what I ask for.   Smart, trustworthy and professional.You would not be disappointed.',
-    company: 'Company testimonial',
+    company: 'Upwork',
+  },
+  {
+    imgurl: images.pro2,
+    name: 'Jhon Oyu',
+    feedback: 'Hassan is a great help, managing a very out of date website. Everything we ask him to do is done quickly and efficiently, we would be lost without him.',
+    company: 'Upwork',
+  },
+  {
+    imgurl: images.pro3,
+    name: 'Yussuf Jama',
+    feedback: 'Very helpful when building my website, I now have my ecommerce store built by him',
+    company: 'Upwork',
   },
 ];
 
