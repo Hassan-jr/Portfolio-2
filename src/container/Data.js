@@ -80,6 +80,11 @@ const experiences = [
         company: 'Upwork',
         desc: 'I a verified freelance software,full stack and cross platform developer at upwork',
       },
+      {
+        name: 'Software Engineer',
+        company: 'Freelancer',
+        desc: 'I a verified freelance software,full stack and cross platform developer at freelancer',
+      },
     ],
   },
 ];
@@ -120,7 +125,7 @@ const works = [
     projectLink: 'https://github.com/Hassan-jr/Admin-Dashboard',
     codeLink: 'https://github.com/Hassan-jr/Admin-Dashboard',
     title: 'Admin Dashboard',
-    description: 'NO des in works',
+    description: '',
     tags: ['Frontend'],
   },
   {
@@ -129,7 +134,7 @@ const works = [
     projectLink: 'https://blog.hassanjr.com/',
     codeLink: 'https://github.com/Hassan-jr/Blog',
     title: 'Blog Website',
-    description: 'NO des in works',
+    description: '',
     tags: ['Backend', 'Frontend'],
   },
   {
@@ -138,7 +143,7 @@ const works = [
     projectLink: 'https://blog.hassanjr.com/',
     codeLink: 'https://github.com/Hassan-jr/Blog',
     title: 'Real Estate Project',
-    description: 'NO des in works',
+    description: '',
     tags: ['Frontend'],
   },
   {
@@ -147,7 +152,7 @@ const works = [
     projectLink: 'http://amazonbyhassan.herokuapp.com/',
     codeLink: 'https://github.com/Hassan-jr/amazon-clone-website',
     title: 'Responsive Amazon-clone Website',
-    description: 'NO des in works',
+    description: '',
     tags: ['Backend', 'Frontend'],
   },
   {
@@ -156,7 +161,7 @@ const works = [
     projectLink: 'http://amazonbyhassan.herokuapp.com/',
     codeLink: 'https://github.com/Hassan-jr/amazon-clone-website',
     title: 'Document Manager App',
-    description: 'NO des in works',
+    description: '',
     tags: ['Mobile App'],
   },
 ];
