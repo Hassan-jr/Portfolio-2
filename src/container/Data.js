@@ -73,12 +73,12 @@ const skills = [
 
 const experiences = [
   {
-    year: 2022,
+    year: 2021,
     works: [
       {
-        name: 'Works name',
-        company: 'Comp work',
-        desc: 'Work descrip',
+        name: 'Software Engineer',
+        company: 'Upwork',
+        desc: 'I a verified freelance software,full stack and cross platform developer at upwork',
       },
     ],
   },
