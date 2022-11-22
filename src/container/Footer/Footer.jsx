@@ -14,6 +14,7 @@ const Footer = () => {
 
 
   const handleChangeInput = (e) => {
+    setLoading(true);
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
@@ -52,8 +53,8 @@ const Footer = () => {
         </div>
       </div>
       {!isFormSubmitted ? (
-        <form  onSubmit={handleSubmit}>
-        <div className="app__footer-form app__flex">
+       
+        <form  onSubmit={handleSubmit} className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
@@ -69,9 +70,9 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
-        </div>
+          <button type="button" className="p-text" onClick={handleChangeInput}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </form>
+       
       ) : (
         <div>
           <h3 className="head-text">
