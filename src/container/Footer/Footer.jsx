@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import emailjs from  'emailjs-com'
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 
@@ -10,29 +10,31 @@ const Footer = () => {
   const isFormSubmitted = false;
   const [loading, setLoading] = useState(false);
 
-  const { username, email, message } = formData;
+  const { username, user_email, message } = formData;
+
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     setLoading(true);
 
-    // const contact = {
-    //   _type: 'contact',
-    //   name: formData.username,
-    //   email: formData.email,
-    //   message: formData.message,
-    // };
+    const contact = {
+      subject: 'contact',
+      name: formData.username,
+      user_email: formData.user_email,
+      message: formData.message,
+    };
+    console.log(e.target);
 
-    // client.create(contact)
-    //   .then(() => {
-    //     setLoading(false);
-    //     setIsFormSubmitted(true);
-    //   })
-    //   .catch((err) => console.log(err));
+    emailjs.sendForm("service_apy8uk3","template_3pshzls" ,e.target,"Qs840L1BwZGTjBL76")
+    .then(res=> {
+      console.log("From EMAIL JS ",res);
+      setLoading(false)
+    }).catch (err=> console.log (err))
+   
   };
 
   return (
@@ -50,12 +52,13 @@ const Footer = () => {
         </div>
       </div>
       {!isFormSubmitted ? (
+        <form  onSubmit={handleSubmit}>
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+            <input className="p-text" type="email" placeholder="Your Email" name="email" value={user_email} onChange={handleChangeInput} />
           </div>
           <div>
             <textarea
@@ -68,6 +71,7 @@ const Footer = () => {
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
+        </form>
       ) : (
         <div>
           <h3 className="head-text">
