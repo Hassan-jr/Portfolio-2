@@ -21,20 +21,20 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     setLoading(true);
-
+   console.log("E.TARGET",e.target);
     const contact = {
       subject: 'contact',
       name: formData.username,
       user_email: formData.user_email,
       message: formData.message,
     };
-    console.log(e.target);
+    console.log("target", contact);
 
-    emailjs.sendForm("service_apy8uk3","template_3pshzls" ,e.target,"Qs840L1BwZGTjBL76")
+    emailjs.sendForm("service_apy8uk3","template_3pshzls",contact,"Qs840L1BwZGTjBL76")
     .then(res=> {
       console.log("From EMAIL JS ",res);
       setLoading(false)
-    }).catch (err=> console.log (err))
+    }).catch (err=> console.log ("EOORO ", err))
    
   };
 
@@ -54,12 +54,12 @@ const Footer = () => {
       </div>
       {!isFormSubmitted ? (
        
-        <form  onSubmit={handleSubmit} className="app__footer-form app__flex">
+        <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={user_email} onChange={handleChangeInput} />
+            <input className="p-text" type="email" placeholder="Your Email" name="user_email" value={user_email} onChange={handleChangeInput} />
           </div>
           <div>
             <textarea
@@ -70,8 +70,8 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleChangeInput}>{!loading ? 'Send Message' : 'Sending...'}</button>
-        </form>
+          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+        </div>
        
       ) : (
         <div>
