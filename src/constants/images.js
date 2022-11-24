@@ -42,6 +42,9 @@ import blog from '../assets/blog.png';
 import caske3 from '../assets/caske3.png';
 import dashboard1 from '../assets/dashboard1.png';
 import noma from '../assets/noma.png';
+import next from '../assets/next.png';
+import tailwind from '../assets/tailwind.png';
+
 
 export default {
   email,
@@ -84,4 +87,6 @@ export default {
   dashboard1,
   caske3,
   noma,
+  tailwind,
+  next
 };
