@@ -166,8 +166,8 @@ const works = [
   {
     imgUrl: images.caske3,
     name: 'Real Estate Project',
-    projectLink: 'https://blog.hassanjr.com/',
-    codeLink: 'https://github.com/Hassan-jr/Blog',
+    projectLink: 'https://github.com/Hassan-jr/Caske',
+    codeLink: 'https://github.com/Hassan-jr/Caske',
     title: 'Real Estate Project',
     description: '',
     tags: ['Frontend'],
@@ -184,8 +184,8 @@ const works = [
   {
     imgUrl: images.noma,
     name: 'Document Manager App',
-    projectLink: 'http://amazonbyhassan.herokuapp.com/',
-    codeLink: 'https://github.com/Hassan-jr/amazon-clone-website',
+    projectLink: 'https://play.google.com/store/apps/details?id=com.noma',
+    codeLink: 'https://github.com/Hassan-jr/Noma',
     title: 'Document Manager App',
     description: '',
     tags: ['Mobile App'],
