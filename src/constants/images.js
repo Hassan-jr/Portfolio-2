@@ -46,7 +46,7 @@ import next from '../assets/next.png';
 import tailwind from '../assets/tailwind.png';
 import up1 from '../assets/up1.png';
 import up2 from '../assets/up2.png';
-
+import up3 from '../assets/up3.png';
 
 export default {
   email,
@@ -92,5 +92,6 @@ export default {
   tailwind,
   next,
   up1,
-  up2
+  up2,
+  up3
 };

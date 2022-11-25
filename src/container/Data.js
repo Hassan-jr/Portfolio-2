@@ -91,21 +91,21 @@ const experiences = [
 
 const testimonials = [
   {
-    imgurl: images.pro1,
+    imgurl: "",
     name: 'Raj Shah',
-    feedback: 'Thanks you so much sir excellent work brother',
+    feedback: '"Thanks you so much sir excellent work brother."',
     company: 'Upwork',
   },
   {
     imgurl: images.pro2,
-    name: 'Jhon Oyu',
-    feedback: 'Hassan is a great help, managing a very out of date website. Everything we ask him to do is done quickly and efficiently, we would be lost without him.',
+    name: 'Smit Bhanderi',
+    feedback: '"Very Good Work."',
     company: 'Upwork',
   },
   {
-    imgurl: images.pro3,
+    imgurl: "",
     name: 'Yussuf Jama',
-    feedback: 'Very helpful when building my website, I now have my ecommerce store built by him',
+    feedback: '"Very helpful when building my website, I now have my ecommerce store built by him."',
     company: 'Upwork',
   },
 ];
@@ -119,6 +119,11 @@ const brands = [
   {
     _id: 46,
     imgUrl: images.up2,
+    name: 'Brand name',
+  },
+  {
+    _id: 47,
+    imgUrl: images.up3,
     name: 'Brand name',
   },
 ];
