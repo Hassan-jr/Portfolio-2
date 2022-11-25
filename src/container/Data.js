@@ -40,8 +40,24 @@ const skills = [
     icon: images.html,
   },
   {
+    name: 'MUI 5',
+    bgColor: '#FAF7F12',
+    icon: images.mu5,
+  },
+  {
+    name: 'Tailwindcss',
+    bgColor: '#EEEEEE',
+    icon: images.tailwind,
+  },
+  {
+    name: 'Next Js',
+    bgColor: '#FAF7F0',
+    icon: images.next,
+  },
+
+  {
     name: 'React.js',
-    bgColor: '#DFE8CC',
+    bgColor: '#EEEEEE',
     icon: images.react,
   },
   {
@@ -52,7 +68,7 @@ const skills = [
   {
     name: 'React Native',
     bgColor: '#EEF1FF',
-    icon: images.flutter,
+    icon: images.react,
   },
   {
     name: 'Node.js',
@@ -60,14 +76,14 @@ const skills = [
     icon: images.node,
   },
   {
-    name: 'MongoDB',
-    bgColor: '#DAEAF1',
-    icon: images.javascript,
+    name: 'Express',
+    bgColor: '#F2F2F2',
+    icon: images.express,
   },
   {
     name: 'MongoDB',
-    bgColor: '#DFE8CC',
-    icon: images.javascript,
+    bgColor: '#F7F7F7',
+    icon: images.MongoDB,
   },
 ];
 
@@ -91,19 +107,19 @@ const experiences = [
 
 const testimonials = [
   {
-    imgurl: "",
+    imgurl: images.pro5,
     name: 'Raj Shah',
     feedback: '"Thanks you so much sir excellent work brother."',
     company: 'Upwork',
   },
   {
-    imgurl: images.pro2,
+    imgurl: images.pro5,
     name: 'Smit Bhanderi',
     feedback: '"Very Good Work."',
     company: 'Upwork',
   },
   {
-    imgurl: "",
+    imgurl: images.pro2,
     name: 'Yussuf Jama',
     feedback: '"Very helpful when building my website, I now have my ecommerce store built by him."',
     company: 'Upwork',
