@@ -6,35 +6,22 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './Footer.scss';
 
 const Footer = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const isFormSubmitted = false;
+  
+  const [isFormSubmitted, setisFormSubmitted] = useState(false)
   const [loading, setLoading] = useState(false);
 
-  const { username, user_email, message } = formData;
-
-
-  const handleChangeInput = (e) => {
-    setLoading(true);
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
 
   const handleSubmit = (e) => {
-    setLoading(true);
-   console.log("E.TARGET",e.target);
-    const contact = {
-      subject: 'contact',
-      name: formData.username,
-      user_email: formData.user_email,
-      message: formData.message,
-    };
-    console.log("target", contact);
-
-    emailjs.sendForm("service_apy8uk3","template_3pshzls",contact,"Qs840L1BwZGTjBL76")
+    setLoading(true)
+    console.log("E target",e.target);
+    e.preventDefault()
+    emailjs.sendForm("service_apy8uk3","template_3pshzls" ,e.target,"Qs840L1BwZGTjBL76")
     .then(res=> {
-      console.log("From EMAIL JS ",res);
+      console.log(res);
       setLoading(false)
-    }).catch (err=> console.log ("EOORO ", err))
+      setisFormSubmitted(true)
+    }).catch (err=> console.log (err))
+    e.target.reset()
    
   };
 
@@ -54,24 +41,22 @@ const Footer = () => {
       </div>
       {!isFormSubmitted ? (
        
-        <div className="app__footer-form app__flex">
+        <form onSubmit={handleSubmit} className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            <input className="p-text" type="text" placeholder="Your Name" name="name"  /> 
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="user_email" value={user_email} onChange={handleChangeInput} />
+            <input className="p-text" type="email" placeholder="Your Email" name="user_email"  />
           </div>
           <div>
             <textarea
               className="p-text"
               placeholder="Your Message"
-              value={message}
               name="message"
-              onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
-        </div>
+          <button  className="p-text" >{!loading ? 'Send Message' : 'Sending...'}</button>
+        </form>
        
       ) : (
         <div>
