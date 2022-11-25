@@ -44,6 +44,8 @@ import dashboard1 from '../assets/dashboard1.png';
 import noma from '../assets/noma.png';
 import next from '../assets/next.png';
 import tailwind from '../assets/tailwind.png';
+import up1 from '../assets/up1.png';
+import up2 from '../assets/up2.png';
 
 
 export default {
@@ -88,5 +90,7 @@ export default {
   caske3,
   noma,
   tailwind,
-  next
+  next,
+  up1,
+  up2
 };

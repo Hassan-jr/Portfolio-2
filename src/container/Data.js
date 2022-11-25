@@ -92,8 +92,8 @@ const experiences = [
 const testimonials = [
   {
     imgurl: images.pro1,
-    name: 'Zakaria',
-    feedback: 'Without doubt one of the most talented programmers out there.  I always go back to Hassan when I am out of my depth and he never failed to deliver what I ask for.   Smart, trustworthy and professional.You would not be disappointed.',
+    name: 'Raj Shah',
+    feedback: 'Thanks you so much sir excellent work brother',
     company: 'Upwork',
   },
   {
@@ -113,7 +113,12 @@ const testimonials = [
 const brands = [
   {
     _id: 45,
-    imgUrl: images.about01,
+    imgUrl: images.up1,
+    name: 'Brand name',
+  },
+  {
+    _id: 46,
+    imgUrl: images.up2,
     name: 'Brand name',
   },
 ];
