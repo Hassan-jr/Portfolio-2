@@ -7,24 +7,28 @@ import './Navbar.scss';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const width2 = window.screen.width;
 
   return (
     <nav className="app__navbar">
+      {/* logo */}
       <div className="app__navbar-logo">
         <img src={images.logo1} alt="logo" />
       </div>
+       {/* nav links */}
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-          <li className="app__flex p-text" key={`link-${item}`}>
+        {['home', 'about', 'work', 'skills', 'contact'].map((item,i) => (
+          <li className="app__flex p-text" key={`link-${i}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
       </ul>
 
-      <div className="app__navbar-menu">
+      <div className="app__navbar-menu" >
+       
         <HiMenuAlt4 onClick={() => setToggle(true)} />
-
+        
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
