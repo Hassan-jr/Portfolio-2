@@ -7,7 +7,7 @@ import './Navbar.scss';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const width2 = window.screen.width;
+ 
 
   return (
     <nav className="app__navbar">
