@@ -17,7 +17,7 @@ const App = () => {
     <Skills />
     <Testimonial />
     <Footer />
-    {width2 < 1700 && (
+    {width2 < 450 && (
         <div className="app__social-m">
         <div>
           <a href="https://github.com/Hassan-jr?tab=repositories">
