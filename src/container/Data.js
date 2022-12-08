@@ -175,7 +175,7 @@ const works = [
   {
     imgUrl: images.amazon,
     name: 'Responsive Amazon-clone Website',
-    projectLink: 'http://amazonbyhassan.herokuapp.com/',
+    projectLink: 'https://amazonclone-h9a0.onrender.com/',
     codeLink: 'https://github.com/Hassan-jr/amazon-clone-website',
     title: 'Responsive Amazon-clone Website',
     description: '',
