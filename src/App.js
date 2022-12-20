@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BsTwitter, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { About, Footer, Header, Skills, Testimonial, Work } from './container';
 import { Navbar } from './components';
 import './App.scss';
-
+import ReactGA from 'react-ga';
 
 const App = () => { 
+
+  ReactGA.initialize('UA-198293761-2');
+
+  useEffect(()=>{
+   
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  },[])
   const width2 = window.screen.width; 
+
+
   return(
   <div className="app">
     <Navbar />
