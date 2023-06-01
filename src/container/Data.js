@@ -106,6 +106,18 @@ const experiences = [
 ];
 
 const testimonials = [
+   {
+    imgurl: images.pro5,
+    name: 'Joachim Stokke',
+    feedback: 'I enjoyed working with Abdiladif and will probably work with him again in the future and would recommend him to anyone. Very good communication and always available and committed to doing a great job."',
+    company: 'Upwork',
+  },
+  {
+    imgurl: images.pro5,
+    name: 'Milan Kozlovacki',
+    feedback: '"Great job, delivered in no time. It was pleasure working with Abdiladif. Highly recommend!"',
+    company: 'Upwork',
+  },
   {
     imgurl: images.pro5,
     name: 'Raj Shah',
@@ -118,15 +130,18 @@ const testimonials = [
     feedback: '"Very Good Work."',
     company: 'Upwork',
   },
-  {
-    imgurl: images.pro2,
-    name: 'Yussuf Jama',
-    feedback: '"Very helpful when building my website, I now have my ecommerce store built by him."',
-    company: 'Upwork',
-  },
 ];
 
 const brands = [
+  {
+    _id: 48,
+    imgUrl: images.up4,
+    name: 'Brand name',
+  },{
+    _id: 49,
+    imgUrl: images.up5,
+    name: 'Brand name',
+  },
   {
     _id: 45,
     imgUrl: images.up1,
@@ -136,23 +151,27 @@ const brands = [
     _id: 46,
     imgUrl: images.up2,
     name: 'Brand name',
-  },
-  {
-    _id: 47,
-    imgUrl: images.up3,
-    name: 'Brand name',
-  },
+  }
 ];
 
 const works = [
   {
-    imgUrl: images.dashboard1,
+    imgUrl: images.relsoft,
     name: 'Admin Dashboard',
-    projectLink: 'https://github.com/Hassan-jr/Admin-Dashboard',
-    codeLink: 'https://github.com/Hassan-jr/Admin-Dashboard',
-    title: 'Admin Dashboard',
+    projectLink: 'https://relsoft.netlify.app/dashboard',
+    codeLink: 'https://github.com/Hassan-jr/relsoft',
+    title: 'React Admin Dashboard',
     description: '',
     tags: ['Frontend'],
+  },
+  {
+    imgUrl: images.nomaStore,
+    name: 'Ecommerce Platform',
+    projectLink: 'https://nomastore.netlify.app/',
+    codeLink: 'https://github.com/Hassan-jr/NomaStore',
+    title: 'Ecommerce Platform',
+    description: '',
+    tags: ['Backend', 'Frontend'],
   },
   {
     imgUrl: images.blog,

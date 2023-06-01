@@ -35,12 +35,15 @@ import tailwind from "../assets/tailwind.png";
 import up1 from "../assets/up1.png";
 import up2 from "../assets/up2.png";
 import up3 from "../assets/up3.png";
+import up4 from "../assets/up4.jpg";
+import up5 from "../assets/up5.jpg";
 import pro5 from "../assets/pro5.jpg";
 import MongoDB from "../assets/mongoDb.png";
 import express from "../assets/express.png";
 import logo1 from "../assets/logo1.png";
 
-
+import relsoft from "../assets/relsoft.png";
+import nomaStore from "../assets/nomaStore.png";
 export default {
   email,
   mobile,
@@ -77,7 +80,12 @@ export default {
   up1,
   up2,
   up3,
+  up4,
+  up5,
   pro5,
   logo1,
+
+  relsoft,
+  nomaStore,
 
 };
