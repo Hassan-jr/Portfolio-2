@@ -20,6 +20,7 @@ import about04 from "../assets/about04.png";
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 
+import profile2 from "../assets/profilepic2.png";
 
 import amazon from "../assets/amazon.png";
 // mine
@@ -44,6 +45,9 @@ import logo1 from "../assets/logo1.png";
 
 import relsoft from "../assets/relsoft.png";
 import nomaStore from "../assets/nomaStore.png";
+import nomapos from "../assets/nomapos.jpg"
+import nomaposeLanding from "../assets/landingPos.png"
+
 export default {
   email,
   mobile,
@@ -65,7 +69,6 @@ export default {
   about04,
   profile,
   circle,
- 
 
   amazon,
 
@@ -87,5 +90,8 @@ export default {
 
   relsoft,
   nomaStore,
+  nomapos,
+  nomaposeLanding,
 
+  profile2,
 };

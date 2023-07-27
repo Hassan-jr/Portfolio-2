@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ebbd69c4.css",
-    "main.js": "/static/js/main.dac02ce3.js",
+    "main.js": "/static/js/main.647ba971.js",
     "static/media/noma.png": "/static/media/noma.5d762fa20e855cf40329.png",
     "static/media/caske3.png": "/static/media/caske3.582bfdd3e31d7a5cb5bf.png",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
@@ -13,9 +13,13 @@
     "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
     "static/media/about03.png": "/static/media/about03.c26c2547bb1a423cf283.png",
     "static/media/profile.png": "/static/media/profile.b5b3138ff8c65c7bdf84.png",
+    "static/media/nomaStore.png": "/static/media/nomaStore.ed07e1684591d78fd5d5.png",
     "static/media/up2.png": "/static/media/up2.2bd2ca8ef69a674d7f36.png",
     "static/media/dashboard1.png": "/static/media/dashboard1.1e8e6ae9551b6938cd27.png",
+    "static/media/relsoft.png": "/static/media/relsoft.0b66df045b447dc317b2.png",
     "static/media/pro2.png": "/static/media/pro2.857ddab7434e7fc2503f.png",
+    "static/media/up4.jpg": "/static/media/up4.64b2ddcf16abb37591f4.jpg",
+    "static/media/up5.jpg": "/static/media/up5.572c2e8b2f22e683e42d.jpg",
     "static/media/up1.png": "/static/media/up1.03f76a790d5f935eb34e.png",
     "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
@@ -29,10 +33,10 @@
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
     "main.ebbd69c4.css.map": "/static/css/main.ebbd69c4.css.map",
-    "main.dac02ce3.js.map": "/static/js/main.dac02ce3.js.map"
+    "main.647ba971.js.map": "/static/js/main.647ba971.js.map"
   },
   "entrypoints": [
     "static/css/main.ebbd69c4.css",
-    "static/js/main.dac02ce3.js"
+    "static/js/main.647ba971.js"
   ]
 }
